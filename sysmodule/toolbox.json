@@ -1,0 +1,20 @@
+{
+  "titleid": "010000000000LLM0",
+  "name": "SwitchLM-Sysmodule",
+  "author": "SwitchLM Project",
+  "category": "System",
+  "description": "Background sysmodule providing game detection, memory expansion, and IPC service for SwitchLM Studio and Overlay.",
+  "service": {
+    "name": "swlm:ipc",
+    "max_sessions": 8
+  },
+  "memory": {
+    "unsafe_expand_mb": 40,
+    "core_pinning": 3
+  },
+  "dependencies": ["libnx"],
+  "flags": {
+    "run_in_background": true,
+    "start_on_boot": false
+  }
+}

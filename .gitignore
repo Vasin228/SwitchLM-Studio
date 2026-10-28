@@ -1,0 +1,53 @@
+# Environment & Local Secrets
+.env
+.env.local
+.env.*.local
+*.secret
+*.key
+config.ini
+
+# DevkitPro & C/C++ Build Artifacts
+build/
+build2/
+*.o
+*.d
+*.elf
+*.map
+*.lst
+*.nacp
+*.npdm
+exefs_dir/
+
+# Compiled Nintendo Switch Binaries
+*.nro
+*.nsp
+*.ovl
+
+# Neural Network Weights (GGUF binary models must be downloaded separately)
+*.gguf
+
+# Output Deployment Directory
+sdout/
+
+# CMake / Temporary Build Directories
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile.cmake
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
